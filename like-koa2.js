@@ -49,6 +49,7 @@ class LikeKoa2 {
   
   listen(...args) {
     const server = http.createServer(this.callback())
+    server.listen(...args)
   }
 }
 
